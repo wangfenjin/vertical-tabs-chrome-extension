@@ -25,72 +25,85 @@ class Sidebar extends Component {
   constructor(props) {
     super(props);
 
-    this.tabCreatedHandler = this.handleTabCreated.bind(this);
-    this.tabRemovedHandler = this.handleTabRemoved.bind(this);
-    this.tabUpdatedHandler = this.handleTabUpdated.bind(this);
-    this.tabMovedHandler = this.handleTabMoved.bind(this);
-    this.tabActivatedHandler = this.handleTabActivated.bind(this);
-    this.tabHighlightedHandler = this.handleTabHighlighted.bind(this);
+    this.interval = null;
+    // this.tabCreatedHandler = this.handleTabCreated.bind(this);
+    // this.tabRemovedHandler = this.handleTabRemoved.bind(this);
+    // this.tabUpdatedHandler = this.handleTabUpdated.bind(this);
+    // this.tabMovedHandler = this.handleTabMoved.bind(this);
+    // this.tabActivatedHandler = this.handleTabActivated.bind(this);
+    // this.tabHighlightedHandler = this.handleTabHighlighted.bind(this);
 
-    chrome.tabs.onCreated.addListener(this.tabCreatedHandler);
-    chrome.tabs.onRemoved.addListener(this.tabRemovedHandler);
-    chrome.tabs.onUpdated.addListener(this.tabUpdatedHandler);
-    chrome.tabs.onMoved.addListener(this.tabMovedHandler);
-    chrome.tabs.onActivated.addListener(this.tabActivatedHandler);
-    chrome.tabs.onHighlighted.addListener(this.tabHighlightedHandler);
+    // chrome.tabs.onCreated.addListener(this.tabCreatedHandler);
+    // chrome.tabs.onRemoved.addListener(this.tabRemovedHandler);
+    // chrome.tabs.onUpdated.addListener(this.tabUpdatedHandler);
+    // chrome.tabs.onMoved.addListener(this.tabMovedHandler);
+    // chrome.tabs.onActivated.addListener(this.tabActivatedHandler);
+    // chrome.tabs.onHighlighted.addListener(this.tabHighlightedHandler);
   }
 
   componentDidMount() {
     this.retrieveTabs();
 
-    window.addEventListener('keydown', (event) => {
-      if (
-        (event.ctrlKey && event.key === '`') ||
-        (event.ctrlKey && event.key === 'Escape') ||
-        (event.metaKey && event.key === 'Escape') ||
-        (event.altKey && event.key === '`') ||
-        (event.altKey && event.key === 'Escape')
-      ) {
-        chrome.runtime.sendMessage({
-          from: 'content',
-          msg: 'REQUEST_TOGGLE_SIDEBAR',
-        });
-      }
-    });
+    this.interval = setInterval(this.retrieveTabs, 1000); // <- time in ms
+
+    // window.addEventListener('keydown', (event) => {
+    //   if (
+    //     (event.ctrlKey && event.key === '`') ||
+    //     (event.ctrlKey && event.key === 'Escape') ||
+    //     (event.metaKey && event.key === 'Escape') ||
+    //     (event.altKey && event.key === '`') ||
+    //     (event.altKey && event.key === 'Escape')
+    //   ) {
+    //     chrome.runtime.sendMessage({
+    //       from: 'content',
+    //       msg: 'REQUEST_TOGGLE_SIDEBAR',
+    //     });
+    //   }
+    // });
 
     // sync scroll positions
-    window.addEventListener('scroll', this.handleScroll, false);
-    chrome.runtime.sendMessage(
-      {
-        from: 'sidebar',
-        msg: 'REQUEST_SIDEBAR_SCROLL_POSITION',
-      },
-      (response) => {
-        window.scroll(response.scrollPositionX, response.scrollPositionY);
-      }
-    );
-    chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-      if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_SIDEBAR_SCROLL_POSITION'
-      ) {
-        window.scroll(request.scrollPositionX, request.scrollPositionY);
-      }
-    });
+    // window.addEventListener('scroll', this.handleScroll, false);
+    // chrome.runtime.sendMessage(
+    //   {
+    //     from: 'sidebar',
+    //     msg: 'REQUEST_SIDEBAR_SCROLL_POSITION',
+    //   },
+    //   (response) => {
+    //     window.scroll(response.scrollPositionX, response.scrollPositionY);
+    //   }
+    // );
+
+    // safari.self.addEventListener("message", handleMessage, false);
+    // function handleMessage(msgEvent) {
+    //   console.log("receive msg, ", msgEvent);
+    // }
+
+    // chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    //   if (request.from === 'background') {
+    //     if (request.msg === 'UPDATE_SIDEBAR_SCROLL_POSITION') {
+    //       window.scroll(request.scrollPositionX, request.scrollPositionY);
+    //     } else if (request.msg === 'TABS_ONCREATED') {
+    //       this.handleTabCreated(request.tabId);
+    //     }
+    //   }
+    // });
   }
 
   componentWillUnmount() {
-    chrome.tabs.onCreated.removeListener(this.tabCreatedHandler);
-    chrome.tabs.onRemoved.removeListener(this.tabRemovedHandler);
-    chrome.tabs.onUpdated.removeListener(this.tabUpdatedHandler);
-    chrome.tabs.onMoved.removeListener(this.tabMovedHandler);
-    chrome.tabs.onActivated.removeListener(this.tabActivatedHandler);
-    chrome.tabs.onHighlighted.removeListener(this.tabHighlightedHandler);
+    // chrome.tabs.onCreated.removeListener(this.tabCreatedHandler);
+    // chrome.tabs.onRemoved.removeListener(this.tabRemovedHandler);
+    // chrome.tabs.onUpdated.removeListener(this.tabUpdatedHandler);
+    // chrome.tabs.onMoved.removeListener(this.tabMovedHandler);
+    // chrome.tabs.onActivated.removeListener(this.tabActivatedHandler);
+    // chrome.tabs.onHighlighted.removeListener(this.tabHighlightedHandler);
 
-    window.removeEventListener('scroll', this.handleScroll);
+    // window.removeEventListener('scroll', this.handleScroll);
+
+    clearInterval(this.interval);
   }
 
   retrieveTabs = () => {
+    console.log('retrieveTabs....');
     chrome.tabs.query({ currentWindow: true }, (tabs) => {
       const tabsDict = {};
       let tabOrders = [];
@@ -134,23 +147,26 @@ class Sidebar extends Component {
     });
   };
 
-  handleScroll = (event) => {
-    // https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/
-    // Clear our timeout throughout the scroll
-    window.clearTimeout(this.isScrolling);
+  // handleScroll = (event) => {
+  //   // https://gomakethings.com/detecting-when-a-visitor-has-stopped-scrolling-with-vanilla-javascript/
+  //   // Clear our timeout throughout the scroll
+  //   window.clearTimeout(this.isScrolling);
 
-    // Set a timeout to run after scrolling ends
-    this.isScrolling = setTimeout(function() {
-      chrome.runtime.sendMessage({
-        from: 'sidebar',
-        msg: 'SIDEBAR_SCROLL_POSITION_CHANGED',
-        scrollPositionX: window.pageXOffset,
-        scrollPositionY: window.pageYOffset,
-      });
-    }, 66);
-  };
+  //   // Set a timeout to run after scrolling ends
+  //   this.isScrolling = setTimeout(function () {
+  //     chrome.runtime.sendMessage({
+  //       from: 'sidebar',
+  //       msg: 'SIDEBAR_SCROLL_POSITION_CHANGED',
+  //       scrollPositionX: window.pageXOffset,
+  //       scrollPositionY: window.pageYOffset,
+  //     });
+  //   }, 66);
+  // };
 
-  updateTabsDictWithTab = (tab, favicon = getFavicon('chrome://newtab/')) => {
+  updateTabsDictWithTab = (
+    tab,
+    favicon = getFavicon('https://www.google.com')
+  ) => {
     let tabsDict = { ...this.state.tabsDict };
     tabsDict[tab.id] = {
       faviconUrl: favicon,
@@ -250,7 +266,10 @@ class Sidebar extends Component {
     const dragTab = this.state.tabOrders[dragIndex];
     this.setState({
       tabOrders: update(this.state.tabOrders, {
-        $splice: [[dragIndex, 1], [hoverIndex, 0, dragTab]],
+        $splice: [
+          [dragIndex, 1],
+          [hoverIndex, 0, dragTab],
+        ],
       }),
     });
   };

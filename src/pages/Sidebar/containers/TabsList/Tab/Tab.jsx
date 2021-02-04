@@ -104,7 +104,9 @@ const Tab = ({
       moveTabToIndex(id, item.idx);
     },
     canDrag(monitor) {
-      return !isSearching;
+      return false;
+      // disable move as not supported
+      // return !isSearching;
     },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
@@ -175,16 +177,17 @@ const Tab = ({
                 setTabAsActive(event, id);
               }}
               onMouseOver={() => {
-                if (!isDragging && isHovering) {
-                  if (index === activeTab.index) {
-                    chrome.tabs.highlight({ tabs: [activeTab.index] }, null);
-                  } else {
-                    chrome.tabs.highlight(
-                      { tabs: [activeTab.index, index] },
-                      null
-                    );
-                  }
-                }
+                // highlight not support
+                // if (!isDragging && isHovering) {
+                //   if (index === activeTab.index) {
+                //     chrome.tabs.highlight({ tabs: [activeTab.index] }, null);
+                //   } else {
+                //     chrome.tabs.highlight(
+                //       { tabs: [activeTab.index, index] },
+                //       null
+                //     );
+                //   }
+                // }
               }}
               onMouseLeave={() => {
                 if (!isDragging) {

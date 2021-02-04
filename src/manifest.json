@@ -4,9 +4,10 @@
     "page": "background.html"
   },
   "browser_action": {},
-  "permissions": ["chrome://favicon/", "tabs", "activeTab", "storage"],
+  "permissions": ["tabs", "activeTab", "storage"],
   "icons": {
-    "128": "icon-128.png"
+    "128": "icon-128.png",
+    "128-eye": "icon-128-eye.png"
   },
   "content_scripts": [
     {
@@ -34,5 +35,5 @@
     }
   },
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr72k/NjWLsQ2Fp7RRSAXCWDLQbeto8D+7qQMOkVXdlTEk9DslAte7UaNNQ+5CTjtmWxhSLN9r/yzLwlKamEqy5LTiGg8rI/lPc033jjdv6E9I00sFd/NMqFmH3BAYyZ3rLlrRC5j+w1PvLtGjZ+fBBX+6XvN5knnmlQfFEmf8EwM9Qrao0H5ydddBfLUaiSKZIEP3s6OykTAwsedHAnMTO922Z/aEJnoqKC8MG2D27AlNOvJdbVeuzy/5RB8HwcReEwkYhXf7jITcOjsxlEUQTYeQ6WXcu9g6KpvaqrdPtlo+ePocLjH43QvPpDSqwWGf/+7F+S6FJhSrJYRXIVDdwIDAQAB",
-  "content_security_policy": "img-src chrome://favicon; script-src 'self' 'unsafe-eval'; object-src 'self'"
+  "content_security_policy": "img-src https://s2.googleusercontent.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; object-src 'self'; child-src 'self' 'unsafe-inline'"
 }

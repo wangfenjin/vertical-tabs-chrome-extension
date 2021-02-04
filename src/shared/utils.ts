@@ -1,3 +1,4 @@
 export const getFavicon = (url: string) => {
-  return `chrome://favicon/size/16@2x/${url}`;
+  const hostname = new URL(url).hostname;
+  return `https://s2.googleusercontent.com/s2/favicons?domain_url=${hostname}`;
 };
