@@ -22,7 +22,7 @@ class Title extends Component {
     // settings
     settingSidebarLocation: 'left',
     settingSidebarShouldShrinkBody: true,
-    settingDisplayTabTitleInFull: true,
+    settingDisplayTabTitleInFull: false,
     settingAutoShowHide: false,
     settingAutoShowHideDelay: 500,
     settingDarkMode: 'auto',
@@ -87,46 +87,46 @@ class Title extends Component {
     });
 
     // sync settings across tabs
-    chrome.runtime.onMessage.addListener((request, sender, response) => {
-      // no need to sync sidebarOnLeft here,
-      // since the sidebar will be unmounted and remounted every time
-      // the sidebarOnLeft status changes
-      // by the content scripts
-      if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_DISPLAY_TAB_IN_FULL_STATUS'
-      ) {
-        const { toStatus } = request;
-        this.setState({
-          settingDisplayTabTitleInFull: toStatus === true,
-        });
-        this.props.setDisplayTabInFull(toStatus === true);
-      } else if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_SHOULD_SHRINK_BODY_STATUS'
-      ) {
-        const { toStatus } = request;
-        this.setState({ settingSidebarShouldShrinkBody: toStatus === true });
-      } else if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_AUTO_SHOW_HIDE_STATUS'
-      ) {
-        const { toStatus } = request;
-        this.setState({ settingAutoShowHide: toStatus === true });
-      } else if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_AUTO_SHOW_HIDE_DELAY_STATUS'
-      ) {
-        const { toStatus } = request;
-        this.setState({ settingAutoShowHideDelay: toStatus });
-      } else if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_DARK_MODE_STATUS'
-      ) {
-        const { toStatus } = request;
-        this.setState({ settingDarkMode: toStatus });
-      }
-    });
+    // chrome.runtime.onMessage.addListener((request, sender, response) => {
+    //   // no need to sync sidebarOnLeft here,
+    //   // since the sidebar will be unmounted and remounted every time
+    //   // the sidebarOnLeft status changes
+    //   // by the content scripts
+    //   if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_DISPLAY_TAB_IN_FULL_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     this.setState({
+    //       settingDisplayTabTitleInFull: toStatus === true,
+    //     });
+    //     this.props.setDisplayTabInFull(toStatus === true);
+    //   } else if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_SHOULD_SHRINK_BODY_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     this.setState({ settingSidebarShouldShrinkBody: toStatus === true });
+    //   } else if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_AUTO_SHOW_HIDE_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     this.setState({ settingAutoShowHide: toStatus === true });
+    //   } else if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_AUTO_SHOW_HIDE_DELAY_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     this.setState({ settingAutoShowHideDelay: toStatus });
+    //   } else if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_DARK_MODE_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     this.setState({ settingDarkMode: toStatus });
+    //   }
+    // });
   }
 
   closeSidebarClickedHandler = () => {

@@ -19,6 +19,10 @@ chrome.storage.local.get(['sidebarOpen'], (result) => {
 
 const changeBrowserIconBadgeWithSidebarOpenStatus = (status) => {
   if (status) {
+    console.log(
+      'change to eye!!!',
+      chrome.extension.getURL('icon-128-eye.png')
+    );
     chrome.browserAction.setIcon({
       path: chrome.extension.getURL('icon-128-eye.png'),
     });
@@ -31,6 +35,9 @@ const changeBrowserIconBadgeWithSidebarOpenStatus = (status) => {
 
 const persistSidebarOpenStatus = (status) => {
   chrome.storage.local.set({
+    sidebarOpen: status,
+  });
+  chrome.storage.sync.set({
     sidebarOpen: status,
   });
 };
@@ -159,7 +166,7 @@ const toggleSidebar = (toStatus = null) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -176,7 +183,7 @@ const updateSidebarWidth = (width) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -193,7 +200,7 @@ const updateSidebarScrollPosition = () => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -211,7 +218,7 @@ const updateSidebarOnLeftStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -228,7 +235,7 @@ const updateShouldShrinkBodyStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -245,7 +252,7 @@ const updateDisplayTabInFullStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -262,7 +269,7 @@ const updateAutoShowHideStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -279,7 +286,7 @@ const updateAutoShowHideDelayStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -296,7 +303,7 @@ const updateDarkModeStatus = (toStatus) => {
     {
       currentWindow: true,
     },
-    function(tabs) {
+    function (tabs) {
       tabs.forEach((tab) => {
         chrome.tabs.sendMessage(tab.id, {
           from: 'background',
@@ -324,7 +331,7 @@ chrome.browserAction.onClicked.addListener((senderTab) => {
   toggleSidebar();
 });
 
-chrome.commands.onCommand.addListener(function(command) {
+chrome.commands.onCommand.addListener(function (command) {
   if (command === '_execute_browser_action') {
     toggleSidebar();
   }

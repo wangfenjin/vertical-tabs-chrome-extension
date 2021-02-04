@@ -7,7 +7,7 @@ import { sortBy } from 'lodash';
 import Title from './containers/Title/Title';
 import TabsList from './containers/TabsList/TabsList';
 
-import { getFavicon } from '../../shared/utils';
+import { getFavicon, getAltFavicon } from '../../shared/utils';
 
 // import UpdateNotice from '../Content/modules/UpdateNotice/UpdateNotice';
 
@@ -26,6 +26,7 @@ class Sidebar extends Component {
     super(props);
 
     this.interval = null;
+    this.sidebarOpen = false;
     // this.tabCreatedHandler = this.handleTabCreated.bind(this);
     // this.tabRemovedHandler = this.handleTabRemoved.bind(this);
     // this.tabUpdatedHandler = this.handleTabUpdated.bind(this);
@@ -99,19 +100,30 @@ class Sidebar extends Component {
 
     // window.removeEventListener('scroll', this.handleScroll);
 
+    console.log('componentWillUnmount');
     clearInterval(this.interval);
   }
 
   retrieveTabs = () => {
-    console.log('retrieveTabs....');
+    // check before query tabs...
+    chrome.storage.sync.get(['sidebarOpen'], (result) => {
+      if (result.sidebarOpen !== undefined) {
+        this.sidebarOpen = result.sidebarOpen === true;
+      }
+    });
+    if (!this.sidebarOpen) {
+      return;
+    }
+
     chrome.tabs.query({ currentWindow: true }, (tabs) => {
       const tabsDict = {};
       let tabOrders = [];
       tabs.forEach((tab) => {
         tab.faviconUrl = getFavicon(tab.url);
-
+        const faviconAltUrl = getAltFavicon(tab.url);
         tabsDict[tab.id] = {
           faviconUrl: tab.faviconUrl,
+          faviconAltUrl: faviconAltUrl,
           title: tab.title,
           url: tab.url,
           pinned: tab.pinned,
@@ -233,7 +245,6 @@ class Sidebar extends Component {
       this.updateTabsDictWithTab(tab, getFavicon(tab.url));
       if (changes.status === 'complete') {
         setTimeout(() => {
-          // make the 'chrome://favicon/' API more reliable
           this.updateTabsDictWithTab(tab, getFavicon(tab.url));
         }, 5000);
       }

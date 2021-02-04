@@ -321,6 +321,20 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     checkSidebarStatus();
   } else if (
     request.from === 'background' &&
+    request.msg === 'UPDATE_DARK_MODE_STATUS'
+  ) {
+    unmountSidebar();
+    mountSidebar();
+    checkSidebarStatus();
+  } else if (
+    request.from === 'background' &&
+    request.msg === 'UPDATE_DISPLAY_TAB_IN_FULL_STATUS'
+  ) {
+    unmountSidebar();
+    mountSidebar();
+    checkSidebarStatus();
+  } else if (
+    request.from === 'background' &&
     request.msg === 'UPDATE_SHOULD_SHRINK_BODY_STATUS'
   ) {
     const { toStatus } = request;

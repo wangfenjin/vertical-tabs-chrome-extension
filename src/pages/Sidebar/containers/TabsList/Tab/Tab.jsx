@@ -39,6 +39,7 @@ const Tab = ({
   openerTabId,
   audible,
   faviconUrl,
+  faviconAltUrl,
   title,
   url,
   status,
@@ -249,6 +250,9 @@ const Tab = ({
                       style={{ width: 16, height: 16 }}
                       src={faviconUrl}
                       alt="favicon"
+                      onError={(event) =>
+                        event.target.setAttribute('src', faviconAltUrl)
+                      }
                     />
                   )}
                 </div>

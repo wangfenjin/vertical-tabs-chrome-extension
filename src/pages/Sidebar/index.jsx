@@ -33,15 +33,15 @@ const App = () => {
     });
 
     // sync settings across tabs
-    chrome.runtime.onMessage.addListener((request, sender, response) => {
-      if (
-        request.from === 'background' &&
-        request.msg === 'UPDATE_DARK_MODE_STATUS'
-      ) {
-        const { toStatus } = request;
-        setDarkModeSetting(toStatus);
-      }
-    });
+    // chrome.runtime.onMessage.addListener((request, sender, response) => {
+    //   if (
+    //     request.from === 'background' &&
+    //     request.msg === 'UPDATE_DARK_MODE_STATUS'
+    //   ) {
+    //     const { toStatus } = request;
+    //     setDarkModeSetting(toStatus);
+    //   }
+    // });
   }, []);
 
   if (darkModeSetting === null) {

@@ -140,6 +140,7 @@ class TabsList extends Component {
                       openerTabId={tabOrder.openerTabId}
                       audible={tabOrder.audible}
                       faviconUrl={tabOrder.faviconUrl}
+                      faviconAltUrl={tabOrder.faviconAltUrl}
                       title={tabOrder.title}
                       url={tabOrder.url}
                       status={tabOrder.status}
