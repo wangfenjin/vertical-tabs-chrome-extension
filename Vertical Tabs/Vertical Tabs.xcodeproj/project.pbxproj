@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7A6910B25CC15CE00780978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6910A25CC15CE00780978 /* AppDelegate.swift */; };
+		E7A6910E25CC15CE00780978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A6910C25CC15CE00780978 /* Main.storyboard */; };
+		E7A6911025CC15CE00780978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6910F25CC15CE00780978 /* ViewController.swift */; };
+		E7A6911225CC15CF00780978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A6911125CC15CF00780978 /* Assets.xcassets */; };
+		E7A6911925CC15CF00780978 /* Vertical Tabs Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E7A6911825CC15CF00780978 /* Vertical Tabs Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7A6911E25CC15CF00780978 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A6911D25CC15CF00780978 /* Cocoa.framework */; };
+		E7A6912125CC15CF00780978 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A6912025CC15CF00780978 /* SafariWebExtensionHandler.swift */; };
+		E7A6913B25CC15CF00780978 /* content.styles.css in Resources */ = {isa = PBXBuildFile; fileRef = E7A6912E25CC15CF00780978 /* content.styles.css */; };
+		E7A6913C25CC15CF00780978 /* iframe-background.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7A6912F25CC15CF00780978 /* iframe-background.gif */; };
+		E7A6913D25CC15CF00780978 /* contentScript.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913025CC15CF00780978 /* contentScript.bundle.js */; };
+		E7A6913E25CC15CF00780978 /* background.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913125CC15CF00780978 /* background.bundle.js */; };
+		E7A6913F25CC15CF00780978 /* sidebar.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913225CC15CF00780978 /* sidebar.bundle.js */; };
+		E7A6914025CC15CF00780978 /* options.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913325CC15CF00780978 /* options.bundle.js */; };
+		E7A6914125CC15CF00780978 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913425CC15CF00780978 /* manifest.json */; };
+		E7A6914225CC15CF00780978 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913525CC15CF00780978 /* options.html */; };
+		E7A6914325CC15CF00780978 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913625CC15CF00780978 /* background.html */; };
+		E7A6914425CC15CF00780978 /* icon-34.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913725CC15CF00780978 /* icon-34.png */; };
+		E7A6914525CC15CF00780978 /* icon-128-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913825CC15CF00780978 /* icon-128-eye.png */; };
+		E7A6914625CC15CF00780978 /* sidebar.html in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913925CC15CF00780978 /* sidebar.html */; };
+		E7A6914725CC15CF00780978 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = E7A6913A25CC15CF00780978 /* icon-128.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7A6911A25CC15CF00780978 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7A690FE25CC15CE00780978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A6911725CC15CF00780978;
+			remoteInfo = "Vertical Tabs Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7A6912925CC15CF00780978 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7A6911925CC15CF00780978 /* Vertical Tabs Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E7A6910625CC15CE00780978 /* Vertical Tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vertical Tabs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A6910925CC15CE00780978 /* Vertical_Tabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs.entitlements; sourceTree = "<group>"; };
+		E7A6910A25CC15CE00780978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7A6910D25CC15CE00780978 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7A6910F25CC15CE00780978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7A6911125CC15CF00780978 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7A6911325CC15CF00780978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A6911825CC15CF00780978 /* Vertical Tabs Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vertical Tabs Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A6911D25CC15CF00780978 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E7A6912025CC15CF00780978 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		E7A6912225CC15CF00780978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A6912325CC15CF00780978 /* Vertical_Tabs_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs_Extension.entitlements; sourceTree = "<group>"; };
+		E7A6912E25CC15CF00780978 /* content.styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.styles.css; path = ../../build/content.styles.css; sourceTree = "<group>"; };
+		E7A6912F25CC15CF00780978 /* iframe-background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "iframe-background.gif"; path = "../../build/iframe-background.gif"; sourceTree = "<group>"; };
+		E7A6913025CC15CF00780978 /* contentScript.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = contentScript.bundle.js; path = ../../build/contentScript.bundle.js; sourceTree = "<group>"; };
+		E7A6913125CC15CF00780978 /* background.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.bundle.js; path = ../../build/background.bundle.js; sourceTree = "<group>"; };
+		E7A6913225CC15CF00780978 /* sidebar.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = sidebar.bundle.js; path = ../../build/sidebar.bundle.js; sourceTree = "<group>"; };
+		E7A6913325CC15CF00780978 /* options.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.bundle.js; path = ../../build/options.bundle.js; sourceTree = "<group>"; };
+		E7A6913425CC15CF00780978 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../build/manifest.json; sourceTree = "<group>"; };
+		E7A6913525CC15CF00780978 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../build/options.html; sourceTree = "<group>"; };
+		E7A6913625CC15CF00780978 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../build/background.html; sourceTree = "<group>"; };
+		E7A6913725CC15CF00780978 /* icon-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-34.png"; path = "../../build/icon-34.png"; sourceTree = "<group>"; };
+		E7A6913825CC15CF00780978 /* icon-128-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128-eye.png"; path = "../../build/icon-128-eye.png"; sourceTree = "<group>"; };
+		E7A6913925CC15CF00780978 /* sidebar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = sidebar.html; path = ../../build/sidebar.html; sourceTree = "<group>"; };
+		E7A6913A25CC15CF00780978 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128.png"; path = "../../build/icon-128.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7A6910325CC15CE00780978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A6911525CC15CF00780978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6911E25CC15CF00780978 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7A690FD25CC15CE00780978 = {
+			isa = PBXGroup;
+			children = (
+				E7A6910825CC15CE00780978 /* Vertical Tabs */,
+				E7A6911F25CC15CF00780978 /* Vertical Tabs Extension */,
+				E7A6911C25CC15CF00780978 /* Frameworks */,
+				E7A6910725CC15CE00780978 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7A6910725CC15CE00780978 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6910625CC15CE00780978 /* Vertical Tabs.app */,
+				E7A6911825CC15CF00780978 /* Vertical Tabs Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7A6910825CC15CE00780978 /* Vertical Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6910925CC15CE00780978 /* Vertical_Tabs.entitlements */,
+				E7A6910A25CC15CE00780978 /* AppDelegate.swift */,
+				E7A6910C25CC15CE00780978 /* Main.storyboard */,
+				E7A6910F25CC15CE00780978 /* ViewController.swift */,
+				E7A6911125CC15CF00780978 /* Assets.xcassets */,
+				E7A6911325CC15CF00780978 /* Info.plist */,
+			);
+			path = "Vertical Tabs";
+			sourceTree = "<group>";
+		};
+		E7A6911C25CC15CF00780978 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6911D25CC15CF00780978 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A6911F25CC15CF00780978 /* Vertical Tabs Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6912D25CC15CF00780978 /* Resources */,
+				E7A6912025CC15CF00780978 /* SafariWebExtensionHandler.swift */,
+				E7A6912225CC15CF00780978 /* Info.plist */,
+				E7A6912325CC15CF00780978 /* Vertical_Tabs_Extension.entitlements */,
+			);
+			path = "Vertical Tabs Extension";
+			sourceTree = "<group>";
+		};
+		E7A6912D25CC15CF00780978 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7A6912E25CC15CF00780978 /* content.styles.css */,
+				E7A6912F25CC15CF00780978 /* iframe-background.gif */,
+				E7A6913025CC15CF00780978 /* contentScript.bundle.js */,
+				E7A6913125CC15CF00780978 /* background.bundle.js */,
+				E7A6913225CC15CF00780978 /* sidebar.bundle.js */,
+				E7A6913325CC15CF00780978 /* options.bundle.js */,
+				E7A6913425CC15CF00780978 /* manifest.json */,
+				E7A6913525CC15CF00780978 /* options.html */,
+				E7A6913625CC15CF00780978 /* background.html */,
+				E7A6913725CC15CF00780978 /* icon-34.png */,
+				E7A6913825CC15CF00780978 /* icon-128-eye.png */,
+				E7A6913925CC15CF00780978 /* sidebar.html */,
+				E7A6913A25CC15CF00780978 /* icon-128.png */,
+			);
+			name = Resources;
+			path = "Vertical Tabs Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7A6910525CC15CE00780978 /* Vertical Tabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A6912A25CC15CF00780978 /* Build configuration list for PBXNativeTarget "Vertical Tabs" */;
+			buildPhases = (
+				E7A6910225CC15CE00780978 /* Sources */,
+				E7A6910325CC15CE00780978 /* Frameworks */,
+				E7A6910425CC15CE00780978 /* Resources */,
+				E7A6912925CC15CF00780978 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A6911B25CC15CF00780978 /* PBXTargetDependency */,
+			);
+			name = "Vertical Tabs";
+			productName = "Vertical Tabs";
+			productReference = E7A6910625CC15CE00780978 /* Vertical Tabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7A6911725CC15CF00780978 /* Vertical Tabs Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A6912625CC15CF00780978 /* Build configuration list for PBXNativeTarget "Vertical Tabs Extension" */;
+			buildPhases = (
+				E7A6911425CC15CF00780978 /* Sources */,
+				E7A6911525CC15CF00780978 /* Frameworks */,
+				E7A6911625CC15CF00780978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vertical Tabs Extension";
+			productName = "Vertical Tabs Extension";
+			productReference = E7A6911825CC15CF00780978 /* Vertical Tabs Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7A690FE25CC15CE00780978 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E7A6910525CC15CE00780978 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E7A6911725CC15CF00780978 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E7A6910125CC15CE00780978 /* Build configuration list for PBXProject "Vertical Tabs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7A690FD25CC15CE00780978;
+			productRefGroup = E7A6910725CC15CE00780978 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7A6910525CC15CE00780978 /* Vertical Tabs */,
+				E7A6911725CC15CF00780978 /* Vertical Tabs Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7A6910425CC15CE00780978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6911225CC15CF00780978 /* Assets.xcassets in Resources */,
+				E7A6910E25CC15CE00780978 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A6911625CC15CF00780978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6913D25CC15CF00780978 /* contentScript.bundle.js in Resources */,
+				E7A6914425CC15CF00780978 /* icon-34.png in Resources */,
+				E7A6914325CC15CF00780978 /* background.html in Resources */,
+				E7A6914725CC15CF00780978 /* icon-128.png in Resources */,
+				E7A6914525CC15CF00780978 /* icon-128-eye.png in Resources */,
+				E7A6914125CC15CF00780978 /* manifest.json in Resources */,
+				E7A6913C25CC15CF00780978 /* iframe-background.gif in Resources */,
+				E7A6914225CC15CF00780978 /* options.html in Resources */,
+				E7A6914025CC15CF00780978 /* options.bundle.js in Resources */,
+				E7A6913B25CC15CF00780978 /* content.styles.css in Resources */,
+				E7A6914625CC15CF00780978 /* sidebar.html in Resources */,
+				E7A6913F25CC15CF00780978 /* sidebar.bundle.js in Resources */,
+				E7A6913E25CC15CF00780978 /* background.bundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7A6910225CC15CE00780978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6911025CC15CE00780978 /* ViewController.swift in Sources */,
+				E7A6910B25CC15CE00780978 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A6911425CC15CF00780978 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A6912125CC15CF00780978 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7A6911B25CC15CF00780978 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A6911725CC15CF00780978 /* Vertical Tabs Extension */;
+			targetProxy = E7A6911A25CC15CF00780978 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7A6910C25CC15CE00780978 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7A6910D25CC15CE00780978 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7A6912425CC15CF00780978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7A6912525CC15CF00780978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E7A6912725CC15CF00780978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs Extension/Vertical_Tabs_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vertical Tabs Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Vertical-Tabs.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E7A6912825CC15CF00780978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs Extension/Vertical_Tabs_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vertical Tabs Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Vertical-Tabs.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E7A6912B25CC15CF00780978 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs/Vertical_Tabs.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Vertical Tabs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Vertical-Tabs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E7A6912C25CC15CF00780978 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs/Vertical_Tabs.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Vertical Tabs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Vertical-Tabs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7A6910125CC15CE00780978 /* Build configuration list for PBXProject "Vertical Tabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A6912425CC15CF00780978 /* Debug */,
+				E7A6912525CC15CF00780978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A6912625CC15CF00780978 /* Build configuration list for PBXNativeTarget "Vertical Tabs Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A6912725CC15CF00780978 /* Debug */,
+				E7A6912825CC15CF00780978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A6912A25CC15CF00780978 /* Build configuration list for PBXNativeTarget "Vertical Tabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A6912B25CC15CF00780978 /* Debug */,
+				E7A6912C25CC15CF00780978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7A690FE25CC15CE00780978 /* Project object */;
+}
