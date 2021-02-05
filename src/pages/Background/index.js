@@ -2,6 +2,7 @@ import '../../assets/img/icon-34.png';
 import '../../assets/img/icon-128.png';
 import '../../assets/img/icon-128-eye.png';
 import '../../assets/img/iframe-background.gif';
+import '../../assets/img/github-favicon.png';
 import './modules/installationHelper';
 
 let sidebarOpen = true; // open -> true  |  close -> false
