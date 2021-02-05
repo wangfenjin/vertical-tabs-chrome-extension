@@ -1,51 +1,32 @@
-# Vertical Tabs Chrome Extension
+# Vertical Tabs for Safari
 
----
+Vertical tabs for Safari, finally!
 
-[<img src="src/assets/img/icon-original.png" height="40"/>](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm) [<img src="preview/repo/chrome-web-store-img.png" height="40"/>](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm)
+## Show case
 
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/pddljdmihkpdfpkgmbhdomeeifpklgnm)](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm)
-[![users](https://img.shields.io/chrome-web-store/users/pddljdmihkpdfpkgmbhdomeeifpklgnm)](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm)
+**Dark theme**
 
----
+<img src="preview/macos-app-store/dark-mode.png" width="300"/>
 
-[![Build Status](https://travis-ci.org/lxieyang/vertical-tabs-chrome-extension.svg?branch=master)](https://travis-ci.org/lxieyang/vertical-tabs-chrome-extension)
-![package.json version](https://img.shields.io/github/package-json/v/lxieyang/vertical-tabs-chrome-extension/master)
-[![MIT License](https://img.shields.io/github/license/lxieyang/vertical-tabs-chrome-extension)](LICENSE)
+**Light theme**
 
-[![dependencies Status](https://david-dm.org/lxieyang/vertical-tabs-chrome-extension/status.svg)](https://david-dm.org/lxieyang/vertical-tabs-chrome-extension)
-[![devDependencies Status](https://david-dm.org/lxieyang/vertical-tabs-chrome-extension/dev-status.svg)](https://david-dm.org/lxieyang/vertical-tabs-chrome-extension?type=dev)
+<img src="preview/macos-app-store/light-mode.png" width="300"/>
 
-[![issues open](https://img.shields.io/github/issues-raw/lxieyang/vertical-tabs-chrome-extension)](https://github.com/lxieyang/vertical-tabs-chrome-extension/issues?q=is%3Aopen+is%3Aissue)
-[![issues closed](https://img.shields.io/github/issues-closed-raw/lxieyang/vertical-tabs-chrome-extension)](https://github.com/lxieyang/vertical-tabs-chrome-extension/issues?q=is%3Aissue+is%3Aclosed)
-[![pr open](https://img.shields.io/github/issues-pr-raw/lxieyang/vertical-tabs-chrome-extension)](https://github.com/lxieyang/vertical-tabs-chrome-extension/pulls?q=is%3Aopen+is%3Apr)
-[![pr closed](https://img.shields.io/github/issues-pr-closed-raw/lxieyang/vertical-tabs-chrome-extension)](https://github.com/lxieyang/vertical-tabs-chrome-extension/pulls?q=is%3Apr+is%3Aclosed)
+**Settings**
 
-![last commit](https://img.shields.io/github/last-commit/lxieyang/vertical-tabs-chrome-extension/master)
-![commit freq](https://img.shields.io/github/commit-activity/w/lxieyang/vertical-tabs-chrome-extension)
+<img src="preview/macos-app-store/settings.png" width="300"/>
 
----
+**Full Screen**
 
-Please provide valuable feedback by:
+<img src="preview/macos-app-store/full-screen.png"/>
 
-- Creating a [new issue](https://github.com/lxieyang/vertical-tabs-chrome-extension/issues/new)
-- Filling out this [Google form](https://forms.gle/YiUg8xeEUD6f1JqM6)
+**Search**
 
----
+<img src="preview/macos-app-store/search.gif" />
 
-**Dark theme support is here 🕶️🕶️🕶️**
+**Pin tab**
 
-<img src="preview/repo/dark-mode.png" width="300"/>
-
----
-
-![preview](/preview/chrome-store/preview-1.png)
-
-Youtube Preview Link: [https://youtu.be/BcpD38IjY6A](https://youtu.be/BcpD38IjY6A)
-
-![dnd tabs](./preview/repo/dnd-tabs.gif)
-
-<img src="./preview/repo/filter-tabs.gif" alt="filter tabs" width="250" /> &nbsp; <img src="./preview/repo/settings-popover.png" alt="settings" width="250" />
+<img src="preview/macos-app-store/pin.gif" />
 
 ---
 
@@ -55,7 +36,7 @@ Youtube Preview Link: [https://youtu.be/BcpD38IjY6A](https://youtu.be/BcpD38IjY6
 - Dark theme support.
 - Display tabs vertically in a sidebar on web pages.
 - Tabs are displayed with the same style as Google Chrome.
-- Drag and Drop to reorder tabs.
+- ~~Drag and Drop to reorder tabs.~~ API [not supported](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/tabs/move) by Safari
 - Search and filter tabs.
 - Context menu on tabs.
 - Toggle the sidebar by clicking on the extension icon.
@@ -66,10 +47,11 @@ Youtube Preview Link: [https://youtu.be/BcpD38IjY6A](https://youtu.be/BcpD38IjY6
 ## Planned Features
 
 - Tree styled tabs
+- Please provide valuable feedback by creating a [new issue](https://github.com/wangfenjin/vertical-tabs-safari-extension/issues/new)
 
 ## 👉 👉 [Release Notes and Change log](/CHANGELOG.md)
 
----
+## Credits
 
 Built with the following template:
 
@@ -77,4 +59,4 @@ Built with the following template:
 
 ---
 
-Built with [React](https://reactjs.org/), [Webpack](https://webpack.js.org/), and ❤ by Michael Xieyang Liu | [Website](https://lxieyang.github.io)
+Built with [React](https://reactjs.org/), [Webpack](https://webpack.js.org/), and ❤ by Michael Xieyang Liu | [Website](https://lxieyang.github.io) and Fenjin Wang | [Website](https://www.wangfenjin.com)
