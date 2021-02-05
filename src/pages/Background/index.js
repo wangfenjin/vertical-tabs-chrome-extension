@@ -85,7 +85,7 @@ chrome.storage.sync.get(['displayTabInFull'], (result) => {
   if (result.displayTabInFull !== undefined) {
     displayTabInFull = result.displayTabInFull === true;
   } else {
-    persistdisplayTabInFullStatus(true); // default to display tab in full
+    persistdisplayTabInFullStatus(false); // default to display tab in full
   }
 });
 

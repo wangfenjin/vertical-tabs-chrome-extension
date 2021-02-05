@@ -1,11 +1,11 @@
 {
-  "name": "vertical-tabs-chrome-extension",
+  "name": "vertical-tabs-safari-extension",
   "version": "1.9.0",
-  "description": "A chrome extension that presents your tabs vertically.",
+  "description": "A safari extension that presents your tabs vertically.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/vertical-tabs-chrome-extension.git"
+    "url": "https://github.com/wangfenjin/vertical-tabs-safari-extension.git"
   },
   "scripts": {
     "build": "node utils/build.js",

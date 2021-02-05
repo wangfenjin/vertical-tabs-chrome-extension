@@ -48,7 +48,7 @@ const SettingsBox = ({
         <a
           title="Source code"
           className={classNames({ VersionBadge: true, Dark: isDark })}
-          href={'https://github.com/lxieyang/vertical-tabs-chrome-extension'}
+          href={'https://github.com/wangfenjin/vertical-tabs-safari-extension'}
           target="_blank"
           rel="noopener noreferrer"
         >
