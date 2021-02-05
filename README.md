@@ -4,6 +4,10 @@ Vertical tabs for Safari, finally!
 
 ## Show case
 
+**Youtube Video**
+
+[![Youtube Video](./preview/repo/youtube.png)](https://www.youtube.com/watch?v=GWtMthjoamM)
+
 **Dark theme**
 
 <img src="preview/macos-app-store/dark-mode.png" width="300"/>
