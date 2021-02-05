@@ -19,16 +19,12 @@ chrome.storage.local.get(['sidebarOpen'], (result) => {
 
 const changeBrowserIconBadgeWithSidebarOpenStatus = (status) => {
   if (status) {
-    console.log(
-      'change to eye!!!',
-      chrome.extension.getURL('icon-128-eye.png')
-    );
     chrome.browserAction.setIcon({
-      path: chrome.extension.getURL('icon-128-eye.png'),
+      path: 'icon-128-eye.png',
     });
   } else {
     chrome.browserAction.setIcon({
-      path: chrome.extension.getURL('icon-128.png'),
+      path: 'icon-128.png',
     });
   }
 };
@@ -83,7 +79,7 @@ const persistShouldShrinkBodyStatus = (status) => {
 /**
  * Display Tab in Full
  */
-let displayTabInFull = true;
+let displayTabInFull = false;
 
 chrome.storage.sync.get(['displayTabInFull'], (result) => {
   if (result.displayTabInFull !== undefined) {

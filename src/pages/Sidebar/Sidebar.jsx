@@ -106,13 +106,15 @@ class Sidebar extends Component {
 
   retrieveTabs = () => {
     // check before query tabs...
-    chrome.storage.sync.get(['sidebarOpen'], (result) => {
-      if (result.sidebarOpen !== undefined) {
-        this.sidebarOpen = result.sidebarOpen === true;
+    if (this.state.tabOrders.length > 0) {
+      chrome.storage.sync.get(['sidebarOpen'], (result) => {
+        if (result.sidebarOpen !== undefined) {
+          this.sidebarOpen = result.sidebarOpen === true;
+        }
+      });
+      if (!this.sidebarOpen) {
+        return;
       }
-    });
-    if (!this.sidebarOpen) {
-      return;
     }
 
     chrome.tabs.query({ currentWindow: true }, (tabs) => {
