@@ -1,8 +1,8 @@
 //
 //  SafariWebExtensionHandler.swift
-//  Vertical Tabs Extension
+//  Vertical Tabs for Safari Extension
 //
-//  Created by Fenjin Wang on 4/2/21.
+//  Created by Fenjin Wang on 5/2/21.
 //
 
 import SafariServices

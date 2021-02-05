@@ -1,16 +1,16 @@
 //
 //  ViewController.swift
-//  Vertical Tabs
+//  Vertical Tabs for Safari
 //
-//  Created by Fenjin Wang on 4/2/21.
+//  Created by Fenjin Wang on 5/2/21.
 //
 
 import Cocoa
 import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
-let appName = "Vertical Tabs"
-let extensionBundleIdentifier = "com.yourCompany.Vertical-Tabs.Extension"
+let appName = "Vertical Tabs for Safari"
+let extensionBundleIdentifier = "com.wangfenjin.Vertical-Tabs-for-Safari.Extension"
 
 class ViewController: NSViewController {
 
