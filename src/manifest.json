@@ -4,10 +4,6 @@
     "page": "background.html"
   },
   "description": "A safari extension that presents your tabs vertically.",
-  "developer": {
-    "name": "Wang Fenjin",
-    "url": "https://github.com/wangfenjin/vertical-tabs-safari-extension"
-  },
   "browser_action": {},
   "permissions": ["tabs", "activeTab", "storage"],
   "icons": {

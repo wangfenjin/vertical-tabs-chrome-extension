@@ -26,7 +26,7 @@ class Sidebar extends Component {
     super(props);
 
     this.interval = null;
-    this.sidebarOpen = false;
+    this.sidebarOpen = true;
     // this.tabCreatedHandler = this.handleTabCreated.bind(this);
     // this.tabRemovedHandler = this.handleTabRemoved.bind(this);
     // this.tabUpdatedHandler = this.handleTabUpdated.bind(this);
@@ -105,6 +105,9 @@ class Sidebar extends Component {
   }
 
   retrieveTabs = () => {
+    if (document.hidden) {
+      return;
+    }
     // check before query tabs...
     if (this.state.tabOrders.length > 0) {
       chrome.storage.sync.get(['sidebarOpen'], (result) => {
@@ -116,7 +119,6 @@ class Sidebar extends Component {
         return;
       }
     }
-
     chrome.tabs.query({ currentWindow: true }, (tabs) => {
       const tabsDict = {};
       let tabOrders = [];
