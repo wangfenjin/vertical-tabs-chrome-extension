@@ -49,7 +49,22 @@ chrome.storage.sync.get(['vt-sidebar-width'], (result) => {
 
 document.body.style.transition = 'margin .25s cubic-bezier(0, 0, 0.3, 1)';
 
+function specialFixShrinkBody() {
+  // verify using mail.qq.com
+  // Is it a general case?
+  document.body.style.transform = null;
+
+  // special case for some website...
+  if (location.href.includes('feishu.cn/drive/')) {
+    return true;
+  }
+  return false;
+}
+
 function shrinkBody(isOpen) {
+  if (specialFixShrinkBody()) {
+    return;
+  }
   if (shouldShrinkBody) {
     if (sidebarLocation === 'right') {
       if (isOpen) {
@@ -68,6 +83,9 @@ function shrinkBody(isOpen) {
 }
 
 function fixShrinkBody(isOpen) {
+  if (specialFixShrinkBody()) {
+    return;
+  }
   if (isOpen) {
     if (shouldShrinkBody) {
       if (sidebarLocation === 'left') {
