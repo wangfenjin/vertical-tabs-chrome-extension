@@ -7,46 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7350F2325CCD448008047AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7350F2225CCD448008047AD /* AppDelegate.swift */; };
-		E7350F2625CCD448008047AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7350F2425CCD448008047AD /* Main.storyboard */; };
-		E7350F2825CCD448008047AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7350F2725CCD448008047AD /* ViewController.swift */; };
-		E7350F2A25CCD449008047AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7350F2925CCD449008047AD /* Assets.xcassets */; };
-		E7350F3125CCD449008047AD /* Vertical Tabs for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E7350F3025CCD449008047AD /* Vertical Tabs for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E7350F3625CCD449008047AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7350F3525CCD449008047AD /* Cocoa.framework */; };
-		E7350F3925CCD449008047AD /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7350F3825CCD449008047AD /* SafariWebExtensionHandler.swift */; };
-		E7350F5325CCD449008047AD /* content.styles.css in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4625CCD449008047AD /* content.styles.css */; };
-		E7350F5425CCD449008047AD /* iframe-background.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4725CCD449008047AD /* iframe-background.gif */; };
-		E7350F5525CCD449008047AD /* contentScript.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4825CCD449008047AD /* contentScript.bundle.js */; };
-		E7350F5625CCD449008047AD /* background.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4925CCD449008047AD /* background.bundle.js */; };
-		E7350F5725CCD449008047AD /* sidebar.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4A25CCD449008047AD /* sidebar.bundle.js */; };
-		E7350F5825CCD449008047AD /* options.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4B25CCD449008047AD /* options.bundle.js */; };
-		E7350F5925CCD449008047AD /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4C25CCD449008047AD /* manifest.json */; };
-		E7350F5A25CCD449008047AD /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4D25CCD449008047AD /* options.html */; };
-		E7350F5B25CCD449008047AD /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4E25CCD449008047AD /* background.html */; };
-		E7350F5C25CCD449008047AD /* icon-34.png in Resources */ = {isa = PBXBuildFile; fileRef = E7350F4F25CCD449008047AD /* icon-34.png */; };
-		E7350F5D25CCD449008047AD /* icon-128-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E7350F5025CCD449008047AD /* icon-128-eye.png */; };
-		E7350F5E25CCD449008047AD /* sidebar.html in Resources */ = {isa = PBXBuildFile; fileRef = E7350F5125CCD449008047AD /* sidebar.html */; };
-		E7350F5F25CCD449008047AD /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = E7350F5225CCD449008047AD /* icon-128.png */; };
+		E776452525D1047400CF39D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776452425D1047400CF39D9 /* AppDelegate.swift */; };
+		E776452825D1047400CF39D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E776452625D1047400CF39D9 /* Main.storyboard */; };
+		E776452A25D1047400CF39D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776452925D1047400CF39D9 /* ViewController.swift */; };
+		E776452C25D1047500CF39D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E776452B25D1047500CF39D9 /* Assets.xcassets */; };
+		E776453325D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E776453225D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E776453825D1047600CF39D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E776453725D1047600CF39D9 /* Cocoa.framework */; };
+		E776453B25D1047600CF39D9 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776453A25D1047600CF39D9 /* SafariWebExtensionHandler.swift */; };
+		E776455A25D1047600CF39D9 /* content.styles.css in Resources */ = {isa = PBXBuildFile; fileRef = E776454825D1047600CF39D9 /* content.styles.css */; };
+		E776455B25D1047600CF39D9 /* iframe-background.gif in Resources */ = {isa = PBXBuildFile; fileRef = E776454925D1047600CF39D9 /* iframe-background.gif */; };
+		E776455C25D1047600CF39D9 /* contentScript.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E776454A25D1047600CF39D9 /* contentScript.bundle.js */; };
+		E776455D25D1047600CF39D9 /* background.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E776454B25D1047600CF39D9 /* background.bundle.js */; };
+		E776455E25D1047600CF39D9 /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = E776454C25D1047600CF39D9 /* icon-1024.png */; };
+		E776455F25D1047600CF39D9 /* sidebar.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E776454D25D1047600CF39D9 /* sidebar.bundle.js */; };
+		E776456025D1047600CF39D9 /* icon-1024-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E776454E25D1047600CF39D9 /* icon-1024-eye.png */; };
+		E776456125D1047600CF39D9 /* github-favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = E776454F25D1047600CF39D9 /* github-favicon.png */; };
+		E776456225D1047600CF39D9 /* icon-512-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E776455025D1047600CF39D9 /* icon-512-eye.png */; };
+		E776456325D1047600CF39D9 /* options.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E776455125D1047600CF39D9 /* options.bundle.js */; };
+		E776456425D1047600CF39D9 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E776455225D1047600CF39D9 /* manifest.json */; };
+		E776456525D1047600CF39D9 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = E776455325D1047600CF39D9 /* options.html */; };
+		E776456625D1047600CF39D9 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = E776455425D1047600CF39D9 /* background.html */; };
+		E776456725D1047600CF39D9 /* icon-34.png in Resources */ = {isa = PBXBuildFile; fileRef = E776455525D1047600CF39D9 /* icon-34.png */; };
+		E776456825D1047600CF39D9 /* icon-128-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = E776455625D1047600CF39D9 /* icon-128-eye.png */; };
+		E776456925D1047600CF39D9 /* sidebar.html in Resources */ = {isa = PBXBuildFile; fileRef = E776455725D1047600CF39D9 /* sidebar.html */; };
+		E776456A25D1047600CF39D9 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = E776455825D1047600CF39D9 /* icon-128.png */; };
+		E776456B25D1047600CF39D9 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = E776455925D1047600CF39D9 /* icon-512.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E7350F3225CCD449008047AD /* PBXContainerItemProxy */ = {
+		E776453425D1047600CF39D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E7350F1625CCD448008047AD /* Project object */;
+			containerPortal = E776451825D1047400CF39D9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E7350F2F25CCD449008047AD;
+			remoteGlobalIDString = E776453125D1047500CF39D9;
 			remoteInfo = "Vertical Tabs for Safari Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E7350F4125CCD449008047AD /* Embed App Extensions */ = {
+		E776454325D1047600CF39D9 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E7350F3125CCD449008047AD /* Vertical Tabs for Safari Extension.appex in Embed App Extensions */,
+				E776453325D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,119 +59,129 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E7350F1E25CCD448008047AD /* Vertical Tabs for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vertical Tabs for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7350F2125CCD448008047AD /* Vertical_Tabs_for_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs_for_Safari.entitlements; sourceTree = "<group>"; };
-		E7350F2225CCD448008047AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7350F2525CCD448008047AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E7350F2725CCD448008047AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E7350F2925CCD449008047AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E7350F2B25CCD449008047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7350F3025CCD449008047AD /* Vertical Tabs for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vertical Tabs for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7350F3525CCD449008047AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		E7350F3825CCD449008047AD /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		E7350F3A25CCD449008047AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7350F3B25CCD449008047AD /* Vertical_Tabs_for_Safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs_for_Safari_Extension.entitlements; sourceTree = "<group>"; };
-		E7350F4625CCD449008047AD /* content.styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.styles.css; path = ../../build/content.styles.css; sourceTree = "<group>"; };
-		E7350F4725CCD449008047AD /* iframe-background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "iframe-background.gif"; path = "../../build/iframe-background.gif"; sourceTree = "<group>"; };
-		E7350F4825CCD449008047AD /* contentScript.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = contentScript.bundle.js; path = ../../build/contentScript.bundle.js; sourceTree = "<group>"; };
-		E7350F4925CCD449008047AD /* background.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.bundle.js; path = ../../build/background.bundle.js; sourceTree = "<group>"; };
-		E7350F4A25CCD449008047AD /* sidebar.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = sidebar.bundle.js; path = ../../build/sidebar.bundle.js; sourceTree = "<group>"; };
-		E7350F4B25CCD449008047AD /* options.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.bundle.js; path = ../../build/options.bundle.js; sourceTree = "<group>"; };
-		E7350F4C25CCD449008047AD /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../build/manifest.json; sourceTree = "<group>"; };
-		E7350F4D25CCD449008047AD /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../build/options.html; sourceTree = "<group>"; };
-		E7350F4E25CCD449008047AD /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../build/background.html; sourceTree = "<group>"; };
-		E7350F4F25CCD449008047AD /* icon-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-34.png"; path = "../../build/icon-34.png"; sourceTree = "<group>"; };
-		E7350F5025CCD449008047AD /* icon-128-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128-eye.png"; path = "../../build/icon-128-eye.png"; sourceTree = "<group>"; };
-		E7350F5125CCD449008047AD /* sidebar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = sidebar.html; path = ../../build/sidebar.html; sourceTree = "<group>"; };
-		E7350F5225CCD449008047AD /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128.png"; path = "../../build/icon-128.png"; sourceTree = "<group>"; };
+		E776452025D1047400CF39D9 /* Vertical Tabs for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vertical Tabs for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E776452325D1047400CF39D9 /* Vertical_Tabs_for_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs_for_Safari.entitlements; sourceTree = "<group>"; };
+		E776452425D1047400CF39D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E776452725D1047400CF39D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E776452925D1047400CF39D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E776452B25D1047500CF39D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E776452D25D1047500CF39D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E776453225D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vertical Tabs for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E776453725D1047600CF39D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E776453A25D1047600CF39D9 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		E776453C25D1047600CF39D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E776453D25D1047600CF39D9 /* Vertical_Tabs_for_Safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vertical_Tabs_for_Safari_Extension.entitlements; sourceTree = "<group>"; };
+		E776454825D1047600CF39D9 /* content.styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.styles.css; path = ../../build/content.styles.css; sourceTree = "<group>"; };
+		E776454925D1047600CF39D9 /* iframe-background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "iframe-background.gif"; path = "../../build/iframe-background.gif"; sourceTree = "<group>"; };
+		E776454A25D1047600CF39D9 /* contentScript.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = contentScript.bundle.js; path = ../../build/contentScript.bundle.js; sourceTree = "<group>"; };
+		E776454B25D1047600CF39D9 /* background.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.bundle.js; path = ../../build/background.bundle.js; sourceTree = "<group>"; };
+		E776454C25D1047600CF39D9 /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-1024.png"; path = "../../build/icon-1024.png"; sourceTree = "<group>"; };
+		E776454D25D1047600CF39D9 /* sidebar.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = sidebar.bundle.js; path = ../../build/sidebar.bundle.js; sourceTree = "<group>"; };
+		E776454E25D1047600CF39D9 /* icon-1024-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-1024-eye.png"; path = "../../build/icon-1024-eye.png"; sourceTree = "<group>"; };
+		E776454F25D1047600CF39D9 /* github-favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "github-favicon.png"; path = "../../build/github-favicon.png"; sourceTree = "<group>"; };
+		E776455025D1047600CF39D9 /* icon-512-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512-eye.png"; path = "../../build/icon-512-eye.png"; sourceTree = "<group>"; };
+		E776455125D1047600CF39D9 /* options.bundle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.bundle.js; path = ../../build/options.bundle.js; sourceTree = "<group>"; };
+		E776455225D1047600CF39D9 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../build/manifest.json; sourceTree = "<group>"; };
+		E776455325D1047600CF39D9 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = ../../build/options.html; sourceTree = "<group>"; };
+		E776455425D1047600CF39D9 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../build/background.html; sourceTree = "<group>"; };
+		E776455525D1047600CF39D9 /* icon-34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-34.png"; path = "../../build/icon-34.png"; sourceTree = "<group>"; };
+		E776455625D1047600CF39D9 /* icon-128-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128-eye.png"; path = "../../build/icon-128-eye.png"; sourceTree = "<group>"; };
+		E776455725D1047600CF39D9 /* sidebar.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = sidebar.html; path = ../../build/sidebar.html; sourceTree = "<group>"; };
+		E776455825D1047600CF39D9 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-128.png"; path = "../../build/icon-128.png"; sourceTree = "<group>"; };
+		E776455925D1047600CF39D9 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512.png"; path = "../../build/icon-512.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E7350F1B25CCD448008047AD /* Frameworks */ = {
+		E776451D25D1047400CF39D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7350F2D25CCD449008047AD /* Frameworks */ = {
+		E776452F25D1047500CF39D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7350F3625CCD449008047AD /* Cocoa.framework in Frameworks */,
+				E776453825D1047600CF39D9 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E7350F1525CCD448008047AD = {
+		E776451725D1047400CF39D9 = {
 			isa = PBXGroup;
 			children = (
-				E7350F2025CCD448008047AD /* Vertical Tabs for Safari */,
-				E7350F3725CCD449008047AD /* Vertical Tabs for Safari Extension */,
-				E7350F3425CCD449008047AD /* Frameworks */,
-				E7350F1F25CCD448008047AD /* Products */,
+				E776452225D1047400CF39D9 /* Vertical Tabs for Safari */,
+				E776453925D1047600CF39D9 /* Vertical Tabs for Safari Extension */,
+				E776453625D1047600CF39D9 /* Frameworks */,
+				E776452125D1047400CF39D9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E7350F1F25CCD448008047AD /* Products */ = {
+		E776452125D1047400CF39D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7350F1E25CCD448008047AD /* Vertical Tabs for Safari.app */,
-				E7350F3025CCD449008047AD /* Vertical Tabs for Safari Extension.appex */,
+				E776452025D1047400CF39D9 /* Vertical Tabs for Safari.app */,
+				E776453225D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7350F2025CCD448008047AD /* Vertical Tabs for Safari */ = {
+		E776452225D1047400CF39D9 /* Vertical Tabs for Safari */ = {
 			isa = PBXGroup;
 			children = (
-				E7350F2125CCD448008047AD /* Vertical_Tabs_for_Safari.entitlements */,
-				E7350F2225CCD448008047AD /* AppDelegate.swift */,
-				E7350F2425CCD448008047AD /* Main.storyboard */,
-				E7350F2725CCD448008047AD /* ViewController.swift */,
-				E7350F2925CCD449008047AD /* Assets.xcassets */,
-				E7350F2B25CCD449008047AD /* Info.plist */,
+				E776452325D1047400CF39D9 /* Vertical_Tabs_for_Safari.entitlements */,
+				E776452425D1047400CF39D9 /* AppDelegate.swift */,
+				E776452625D1047400CF39D9 /* Main.storyboard */,
+				E776452925D1047400CF39D9 /* ViewController.swift */,
+				E776452B25D1047500CF39D9 /* Assets.xcassets */,
+				E776452D25D1047500CF39D9 /* Info.plist */,
 			);
 			path = "Vertical Tabs for Safari";
 			sourceTree = "<group>";
 		};
-		E7350F3425CCD449008047AD /* Frameworks */ = {
+		E776453625D1047600CF39D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E7350F3525CCD449008047AD /* Cocoa.framework */,
+				E776453725D1047600CF39D9 /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E7350F3725CCD449008047AD /* Vertical Tabs for Safari Extension */ = {
+		E776453925D1047600CF39D9 /* Vertical Tabs for Safari Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E7350F4525CCD449008047AD /* Resources */,
-				E7350F3825CCD449008047AD /* SafariWebExtensionHandler.swift */,
-				E7350F3A25CCD449008047AD /* Info.plist */,
-				E7350F3B25CCD449008047AD /* Vertical_Tabs_for_Safari_Extension.entitlements */,
+				E776454725D1047600CF39D9 /* Resources */,
+				E776453A25D1047600CF39D9 /* SafariWebExtensionHandler.swift */,
+				E776453C25D1047600CF39D9 /* Info.plist */,
+				E776453D25D1047600CF39D9 /* Vertical_Tabs_for_Safari_Extension.entitlements */,
 			);
 			path = "Vertical Tabs for Safari Extension";
 			sourceTree = "<group>";
 		};
-		E7350F4525CCD449008047AD /* Resources */ = {
+		E776454725D1047600CF39D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7350F4625CCD449008047AD /* content.styles.css */,
-				E7350F4725CCD449008047AD /* iframe-background.gif */,
-				E7350F4825CCD449008047AD /* contentScript.bundle.js */,
-				E7350F4925CCD449008047AD /* background.bundle.js */,
-				E7350F4A25CCD449008047AD /* sidebar.bundle.js */,
-				E7350F4B25CCD449008047AD /* options.bundle.js */,
-				E7350F4C25CCD449008047AD /* manifest.json */,
-				E7350F4D25CCD449008047AD /* options.html */,
-				E7350F4E25CCD449008047AD /* background.html */,
-				E7350F4F25CCD449008047AD /* icon-34.png */,
-				E7350F5025CCD449008047AD /* icon-128-eye.png */,
-				E7350F5125CCD449008047AD /* sidebar.html */,
-				E7350F5225CCD449008047AD /* icon-128.png */,
+				E776454825D1047600CF39D9 /* content.styles.css */,
+				E776454925D1047600CF39D9 /* iframe-background.gif */,
+				E776454A25D1047600CF39D9 /* contentScript.bundle.js */,
+				E776454B25D1047600CF39D9 /* background.bundle.js */,
+				E776454C25D1047600CF39D9 /* icon-1024.png */,
+				E776454D25D1047600CF39D9 /* sidebar.bundle.js */,
+				E776454E25D1047600CF39D9 /* icon-1024-eye.png */,
+				E776454F25D1047600CF39D9 /* github-favicon.png */,
+				E776455025D1047600CF39D9 /* icon-512-eye.png */,
+				E776455125D1047600CF39D9 /* options.bundle.js */,
+				E776455225D1047600CF39D9 /* manifest.json */,
+				E776455325D1047600CF39D9 /* options.html */,
+				E776455425D1047600CF39D9 /* background.html */,
+				E776455525D1047600CF39D9 /* icon-34.png */,
+				E776455625D1047600CF39D9 /* icon-128-eye.png */,
+				E776455725D1047600CF39D9 /* sidebar.html */,
+				E776455825D1047600CF39D9 /* icon-128.png */,
+				E776455925D1047600CF39D9 /* icon-512.png */,
 			);
 			name = Resources;
 			path = "Vertical Tabs for Safari Extension";
@@ -175,32 +190,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7350F1D25CCD448008047AD /* Vertical Tabs for Safari */ = {
+		E776451F25D1047400CF39D9 /* Vertical Tabs for Safari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7350F4225CCD449008047AD /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari" */;
+			buildConfigurationList = E776454425D1047600CF39D9 /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari" */;
 			buildPhases = (
-				E7350F1A25CCD448008047AD /* Sources */,
-				E7350F1B25CCD448008047AD /* Frameworks */,
-				E7350F1C25CCD448008047AD /* Resources */,
-				E7350F4125CCD449008047AD /* Embed App Extensions */,
+				E776451C25D1047400CF39D9 /* Sources */,
+				E776451D25D1047400CF39D9 /* Frameworks */,
+				E776451E25D1047400CF39D9 /* Resources */,
+				E776454325D1047600CF39D9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E7350F3325CCD449008047AD /* PBXTargetDependency */,
+				E776453525D1047600CF39D9 /* PBXTargetDependency */,
 			);
 			name = "Vertical Tabs for Safari";
 			productName = "Vertical Tabs for Safari";
-			productReference = E7350F1E25CCD448008047AD /* Vertical Tabs for Safari.app */;
+			productReference = E776452025D1047400CF39D9 /* Vertical Tabs for Safari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E7350F2F25CCD449008047AD /* Vertical Tabs for Safari Extension */ = {
+		E776453125D1047500CF39D9 /* Vertical Tabs for Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7350F3E25CCD449008047AD /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari Extension" */;
+			buildConfigurationList = E776454025D1047600CF39D9 /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari Extension" */;
 			buildPhases = (
-				E7350F2C25CCD449008047AD /* Sources */,
-				E7350F2D25CCD449008047AD /* Frameworks */,
-				E7350F2E25CCD449008047AD /* Resources */,
+				E776452E25D1047500CF39D9 /* Sources */,
+				E776452F25D1047500CF39D9 /* Frameworks */,
+				E776453025D1047500CF39D9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -208,27 +223,27 @@
 			);
 			name = "Vertical Tabs for Safari Extension";
 			productName = "Vertical Tabs for Safari Extension";
-			productReference = E7350F3025CCD449008047AD /* Vertical Tabs for Safari Extension.appex */;
+			productReference = E776453225D1047500CF39D9 /* Vertical Tabs for Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E7350F1625CCD448008047AD /* Project object */ = {
+		E776451825D1047400CF39D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					E7350F1D25CCD448008047AD = {
+					E776451F25D1047400CF39D9 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					E7350F2F25CCD449008047AD = {
+					E776453125D1047500CF39D9 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = E7350F1925CCD448008047AD /* Build configuration list for PBXProject "Vertical Tabs for Safari" */;
+			buildConfigurationList = E776451B25D1047400CF39D9 /* Build configuration list for PBXProject "Vertical Tabs for Safari" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,82 +251,87 @@
 				en,
 				Base,
 			);
-			mainGroup = E7350F1525CCD448008047AD;
-			productRefGroup = E7350F1F25CCD448008047AD /* Products */;
+			mainGroup = E776451725D1047400CF39D9;
+			productRefGroup = E776452125D1047400CF39D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7350F1D25CCD448008047AD /* Vertical Tabs for Safari */,
-				E7350F2F25CCD449008047AD /* Vertical Tabs for Safari Extension */,
+				E776451F25D1047400CF39D9 /* Vertical Tabs for Safari */,
+				E776453125D1047500CF39D9 /* Vertical Tabs for Safari Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E7350F1C25CCD448008047AD /* Resources */ = {
+		E776451E25D1047400CF39D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7350F2A25CCD449008047AD /* Assets.xcassets in Resources */,
-				E7350F2625CCD448008047AD /* Main.storyboard in Resources */,
+				E776452C25D1047500CF39D9 /* Assets.xcassets in Resources */,
+				E776452825D1047400CF39D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7350F2E25CCD449008047AD /* Resources */ = {
+		E776453025D1047500CF39D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7350F5525CCD449008047AD /* contentScript.bundle.js in Resources */,
-				E7350F5C25CCD449008047AD /* icon-34.png in Resources */,
-				E7350F5B25CCD449008047AD /* background.html in Resources */,
-				E7350F5F25CCD449008047AD /* icon-128.png in Resources */,
-				E7350F5D25CCD449008047AD /* icon-128-eye.png in Resources */,
-				E7350F5925CCD449008047AD /* manifest.json in Resources */,
-				E7350F5425CCD449008047AD /* iframe-background.gif in Resources */,
-				E7350F5A25CCD449008047AD /* options.html in Resources */,
-				E7350F5825CCD449008047AD /* options.bundle.js in Resources */,
-				E7350F5325CCD449008047AD /* content.styles.css in Resources */,
-				E7350F5E25CCD449008047AD /* sidebar.html in Resources */,
-				E7350F5725CCD449008047AD /* sidebar.bundle.js in Resources */,
-				E7350F5625CCD449008047AD /* background.bundle.js in Resources */,
+				E776456825D1047600CF39D9 /* icon-128-eye.png in Resources */,
+				E776456A25D1047600CF39D9 /* icon-128.png in Resources */,
+				E776456025D1047600CF39D9 /* icon-1024-eye.png in Resources */,
+				E776456225D1047600CF39D9 /* icon-512-eye.png in Resources */,
+				E776455C25D1047600CF39D9 /* contentScript.bundle.js in Resources */,
+				E776456725D1047600CF39D9 /* icon-34.png in Resources */,
+				E776455B25D1047600CF39D9 /* iframe-background.gif in Resources */,
+				E776456325D1047600CF39D9 /* options.bundle.js in Resources */,
+				E776456425D1047600CF39D9 /* manifest.json in Resources */,
+				E776456125D1047600CF39D9 /* github-favicon.png in Resources */,
+				E776456925D1047600CF39D9 /* sidebar.html in Resources */,
+				E776456B25D1047600CF39D9 /* icon-512.png in Resources */,
+				E776455E25D1047600CF39D9 /* icon-1024.png in Resources */,
+				E776455A25D1047600CF39D9 /* content.styles.css in Resources */,
+				E776455F25D1047600CF39D9 /* sidebar.bundle.js in Resources */,
+				E776455D25D1047600CF39D9 /* background.bundle.js in Resources */,
+				E776456525D1047600CF39D9 /* options.html in Resources */,
+				E776456625D1047600CF39D9 /* background.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E7350F1A25CCD448008047AD /* Sources */ = {
+		E776451C25D1047400CF39D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7350F2825CCD448008047AD /* ViewController.swift in Sources */,
-				E7350F2325CCD448008047AD /* AppDelegate.swift in Sources */,
+				E776452A25D1047400CF39D9 /* ViewController.swift in Sources */,
+				E776452525D1047400CF39D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7350F2C25CCD449008047AD /* Sources */ = {
+		E776452E25D1047500CF39D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7350F3925CCD449008047AD /* SafariWebExtensionHandler.swift in Sources */,
+				E776453B25D1047600CF39D9 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7350F3325CCD449008047AD /* PBXTargetDependency */ = {
+		E776453525D1047600CF39D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E7350F2F25CCD449008047AD /* Vertical Tabs for Safari Extension */;
-			targetProxy = E7350F3225CCD449008047AD /* PBXContainerItemProxy */;
+			target = E776453125D1047500CF39D9 /* Vertical Tabs for Safari Extension */;
+			targetProxy = E776453425D1047600CF39D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E7350F2425CCD448008047AD /* Main.storyboard */ = {
+		E776452625D1047400CF39D9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E7350F2525CCD448008047AD /* Base */,
+				E776452725D1047400CF39D9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -319,7 +339,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E7350F3C25CCD449008047AD /* Debug */ = {
+		E776453E25D1047600CF39D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,7 +400,7 @@
 			};
 			name = Debug;
 		};
-		E7350F3D25CCD449008047AD /* Release */ = {
+		E776453F25D1047600CF39D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -434,12 +454,12 @@
 			};
 			name = Release;
 		};
-		E7350F3F25CCD449008047AD /* Debug */ = {
+		E776454125D1047600CF39D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs for Safari Extension/Vertical_Tabs_for_Safari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23TD49C6LM;
+				DEVELOPMENT_TEAM = X6BK42MX95;
 				INFOPLIST_FILE = "Vertical Tabs for Safari Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +467,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangfenjin.Vertical-Tabs-for-Safari.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -454,12 +475,12 @@
 			};
 			name = Debug;
 		};
-		E7350F4025CCD449008047AD /* Release */ = {
+		E776454225D1047600CF39D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs for Safari Extension/Vertical_Tabs_for_Safari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23TD49C6LM;
+				DEVELOPMENT_TEAM = X6BK42MX95;
 				INFOPLIST_FILE = "Vertical Tabs for Safari Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +488,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangfenjin.Vertical-Tabs-for-Safari.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -474,46 +496,46 @@
 			};
 			name = Release;
 		};
-		E7350F4325CCD449008047AD /* Debug */ = {
+		E776454525D1047600CF39D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs for Safari/Vertical_Tabs_for_Safari.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23TD49C6LM;
+				DEVELOPMENT_TEAM = X6BK42MX95;
 				INFOPLIST_FILE = "Vertical Tabs for Safari/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangfenjin.Vertical-Tabs-for-Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		E7350F4425CCD449008047AD /* Release */ = {
+		E776454625D1047600CF39D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Vertical Tabs for Safari/Vertical_Tabs_for_Safari.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23TD49C6LM;
+				DEVELOPMENT_TEAM = X6BK42MX95;
 				INFOPLIST_FILE = "Vertical Tabs for Safari/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangfenjin.Vertical-Tabs-for-Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -523,34 +545,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7350F1925CCD448008047AD /* Build configuration list for PBXProject "Vertical Tabs for Safari" */ = {
+		E776451B25D1047400CF39D9 /* Build configuration list for PBXProject "Vertical Tabs for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7350F3C25CCD449008047AD /* Debug */,
-				E7350F3D25CCD449008047AD /* Release */,
+				E776453E25D1047600CF39D9 /* Debug */,
+				E776453F25D1047600CF39D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7350F3E25CCD449008047AD /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari Extension" */ = {
+		E776454025D1047600CF39D9 /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7350F3F25CCD449008047AD /* Debug */,
-				E7350F4025CCD449008047AD /* Release */,
+				E776454125D1047600CF39D9 /* Debug */,
+				E776454225D1047600CF39D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7350F4225CCD449008047AD /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari" */ = {
+		E776454425D1047600CF39D9 /* Build configuration list for PBXNativeTarget "Vertical Tabs for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7350F4325CCD449008047AD /* Debug */,
-				E7350F4425CCD449008047AD /* Release */,
+				E776454525D1047600CF39D9 /* Debug */,
+				E776454625D1047600CF39D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E7350F1625CCD448008047AD /* Project object */;
+	rootObject = E776451825D1047400CF39D9 /* Project object */;
 }

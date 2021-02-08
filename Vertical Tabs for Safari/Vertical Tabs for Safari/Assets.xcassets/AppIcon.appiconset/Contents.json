@@ -37,19 +37,22 @@
       "size": "256x256"
     },
     {
+      "size": "256x256",
       "idiom": "mac",
-      "scale": "2x",
-      "size": "256x256"
+      "filename": "icon-512.png",
+      "scale": "2x"
     },
     {
+      "size": "512x512",
       "idiom": "mac",
-      "scale": "1x",
-      "size": "512x512"
+      "filename": "icon-512.png",
+      "scale": "1x"
     },
     {
+      "size": "512x512",
       "idiom": "mac",
-      "scale": "2x",
-      "size": "512x512"
+      "filename": "icon-1024.png",
+      "scale": "2x"
     }
   ],
   "info": {

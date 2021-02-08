@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Vertical Tabs for Safari
 //
-//  Created by Fenjin Wang on 5/2/21.
+//  Created by Fenjin Wang on 8/2/21.
 //
 
 import Cocoa
