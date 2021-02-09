@@ -1,3 +1,5 @@
+<a href="https://apps.apple.com/us/app/vertical-tabs-for-safari/id1552657113?mt=12&amp;itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-US?size=250x83&amp;releaseDate=1612742400&h=ef9e23affbf94f6d250bca2dd156abf7" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+
 # Vertical Tabs for Safari
 
 Vertical tabs for Safari, finally!
